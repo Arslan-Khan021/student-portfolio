@@ -726,16 +726,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 480px) {
   h1 { font-size: 2rem; }
   .nav-links { gap: 0.8rem; }
@@ -749,6 +739,7 @@ footer {
   color: var(--accent);
   margin-top: 0.8rem;
   letter-spacing: 0.08em;
+}
 }
 
 
