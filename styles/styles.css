@@ -4,9 +4,6 @@ body{
     font-family: Arial, sans-serif; 
 }
 
-/* ============================================
-   style.css — UCP Student Clubs Portal
-   ============================================ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -608,4 +605,10 @@ footer {
   .stats-strip { grid-template-columns: 1fr 1fr; }
   .clubs-grid { grid-template-columns: 1fr; }
   .event-card { padding: 1.25rem; }
+.club-meta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent);
+  margin-top: 0.8rem;
+  letter-spacing: 0.08em;
 }
