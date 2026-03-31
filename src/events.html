@@ -1,13 +1,183 @@
+<!-- events.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upcoming Events | UCP Clubs Portal</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <h1>Events</h1>
-    
+
+  <nav>
+    <a class="nav-logo" href="index.html">UCP Clubs</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="clubs.html">Clubs</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="highlights.html">Highlights</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <p class="hero-tag">Spring 2025 Schedule</p>
+    <h1>Upcoming <span>Events</span> & Activities</h1>
+    <p class="hero-sub">Stay in the loop. From workshops to competitions — here's everything happening across UCP's student clubs this semester.</p>
+  </section>
+
+  <div class="filter-bar">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Workshop</button>
+    <button class="filter-btn">Competition</button>
+    <button class="filter-btn">Meetup</button>
+    <button class="filter-btn">Seminar</button>
+    <button class="filter-btn">Social</button>
+  </div>
+
+  <section class="events-section">
+    <div class="section-header">
+      <span class="section-tag">// events this semester</span>
+      <span class="section-count">07 events</span>
+    </div>
+
+    <div class="events-grid">
+
+      <div class="event-card featured-card">
+        <div class="featured-content">
+          <p class="featured-badge">★ Featured Event</p>
+          <div class="card-top">
+            <div class="event-date">
+              <span class="date-day">15</span>
+              <span class="date-month">Apr</span>
+            </div>
+            <span class="event-tag tag-competition">Competition</span>
+          </div>
+          <h2 class="event-title">Inter-University Hackathon 2025</h2>
+          <div class="event-meta">
+            <div class="meta-item">🕘 9:00 AM — 9:00 PM (12 hrs)</div>
+            <div class="meta-item">📍 CS Block, Auditorium — UCP Main Campus</div>
+          </div>
+          <p class="event-desc">Build something remarkable in 12 hours. Open to all departments. Teams of 2–4. Cash prizes, industry mentors, and recruitment opportunities with top tech firms.</p>
+          <div class="card-footer">
+            <span class="spots">Spots left: <span>38 / 120</span></span>
+            <button class="register-btn">Register Now</button>
+          </div>
+        </div>
+        <div class="featured-visual">
+          <span class="featured-icon">⚡</span>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="card-top">
+          <div class="event-date"><span class="date-day">22</span><span class="date-month">Apr</span></div>
+          <span class="event-tag tag-workshop">Workshop</span>
+        </div>
+        <h3 class="event-title">Intro to UI/UX Design with Figma</h3>
+        <div class="event-meta">
+          <div class="meta-item">🕑 2:00 PM — 5:00 PM</div>
+          <div class="meta-item">📍 Lab 3, CS Block</div>
+        </div>
+        <p class="event-desc">Hands-on session covering wireframing, prototyping, and design principles. Bring your laptop. Hosted by the Creative Tech Club.</p>
+        <div class="card-footer">
+          <span class="spots">Spots left: <span>12 / 40</span></span>
+          <button class="register-btn">Register Now</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="card-top">
+          <div class="event-date"><span class="date-day">28</span><span class="date-month">Apr</span></div>
+          <span class="event-tag tag-seminar">Seminar</span>
+        </div>
+        <h3 class="event-title">Tech Careers: Industry Panel Discussion</h3>
+        <div class="event-meta">
+          <div class="meta-item">🕚 11:00 AM — 1:00 PM</div>
+          <div class="meta-item">📍 Seminar Hall B</div>
+        </div>
+        <p class="event-desc">Four industry speakers share insights on landing your first job, freelancing vs. employment, and navigating the tech landscape in Pakistan.</p>
+        <div class="card-footer">
+          <span class="spots">Spots left: <span>60 / 80</span></span>
+          <button class="register-btn">Register Now</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="card-top">
+          <div class="event-date"><span class="date-day">05</span><span class="date-month">May</span></div>
+          <span class="event-tag tag-meetup">Meetup</span>
+        </div>
+        <h3 class="event-title">Open Source Contributor Meetup</h3>
+        <div class="event-meta">
+          <div class="meta-item">🕓 4:00 PM — 6:30 PM</div>
+          <div class="meta-item">📍 Student Activity Center</div>
+        </div>
+        <p class="event-desc">Casual meetup for students interested in contributing to open source. Share your GitHub, find collaborators, and get your first PR merged.</p>
+        <div class="card-footer">
+          <span class="spots">Spots left: <span>22 / 35</span></span>
+          <button class="register-btn">Register Now</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="card-top">
+          <div class="event-date"><span class="date-day">10</span><span class="date-month">May</span></div>
+          <span class="event-tag tag-workshop">Workshop</span>
+        </div>
+        <h3 class="event-title">Git & GitHub for Beginners</h3>
+        <div class="event-meta">
+          <div class="meta-item">🕙 10:00 AM — 12:30 PM</div>
+          <div class="meta-item">📍 Lab 1, CS Block</div>
+        </div>
+        <p class="event-desc">Learn version control from scratch. Clone, branch, commit, push, and open your first pull request. No prior experience needed.</p>
+        <div class="card-footer">
+          <span class="spots">Spots left: <span>0 / 30</span></span>
+          <button class="register-btn full">Full</button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="card-top">
+          <div class="event-date"><span class="date-day">17</span><span class="date-month">May</span></div>
+          <span class="event-tag tag-social">Social</span>
+        </div>
+        <h3 class="event-title">End of Semester Club Gala</h3>
+        <div class="event-meta">
+          <div class="meta-item">🕔 5:00 PM — 9:00 PM</div>
+          <div class="meta-item">📍 Main Lawn, UCP Campus</div>
+        </div>
+        <p class="event-desc">Celebrate the semester with food stalls, performances, and awards for outstanding club members. All students welcome!</p>
+        <div class="card-footer">
+          <span class="spots">Spots left: <span>Open Entry</span></span>
+          <button class="register-btn">Register Now</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-text">© 2025 UCP Student Clubs Portal</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="clubs.html">Clubs</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="highlights.html">Highlights</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+
 </body>
 </html>
