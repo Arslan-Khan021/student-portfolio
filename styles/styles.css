@@ -598,6 +598,144 @@ footer {
   footer { flex-direction: column; align-items: flex-start; padding: 1.5rem 1.25rem; }
 }
 
+
+/* ── JOINS PAGE SPECIFIC STYLING ── */
+
+/* HERO SECTION */
+.hero[data-bg-text="JOIN"] {
+  padding: 5rem 2.5rem 3rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-sub {
+  margin-top: 1.5rem;
+  max-width: 600px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+/* STEPS TO JOIN (WHY GRID) */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+.why-card {
+  background: var(--bg);
+  padding: 2rem;
+  transition: background 0.2s;
+}
+
+.why-card:hover {
+  background: var(--surface);
+}
+
+.why-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  margin-bottom: 1rem;
+}
+
+.why-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.why-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* CLUBS GRID */
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.club-card {
+  background: var(--bg);
+  padding: 1.8rem;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s;
+}
+
+.club-card:hover {
+  background: var(--surface);
+}
+
+.club-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.club-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.club-desc {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* CTA BANNER */
+.cta-banner {
+  padding: 4rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.cta-text h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+}
+
+.cta-text p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.cta-banner .btn-primary {
+  padding: 0.8rem 2rem;
+  font-size: 0.85rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 480px) {
   h1 { font-size: 2rem; }
   .nav-links { gap: 0.8rem; }
@@ -611,4 +749,25 @@ footer {
   color: var(--accent);
   margin-top: 0.8rem;
   letter-spacing: 0.08em;
+}
+
+
+
+/* ── MEDIA QUERIES ── */
+@media (max-width: 768px) {
+  .hero { padding: 3rem 1.25rem 2rem; }
+  .why-grid { grid-template-columns: 1fr; margin: 1.5rem 0; }
+  .cta-banner { flex-direction: column; align-items: flex-start; padding: 2.5rem 1.25rem; }
+  .clubs-grid { margin: 1.5rem 0; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 2rem; }
+  .hero-sub { font-size: 0.9rem; max-width: 100%; }
+  .clubs-grid { grid-template-columns: 1fr; }
+  .club-card { padding: 1.25rem; }
+  .why-card { padding: 1.5rem; }
+  .why-title { font-size: 1rem; }
+  .why-desc { font-size: 0.8rem; }
+  .cta-banner .btn-primary { width: 100%; text-align: center; }
 }
