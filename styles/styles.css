@@ -726,12 +726,53 @@ footer {
 }
 
 
+/* ── HIGHLIGHTS GRID ── */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
 
+.highlight-card {
+  background: var(--bg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: background 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
 
+.highlight-card:hover { background: var(--surface); }
 
+.highlight-icon {
+  font-size: 2.5rem;
+}
 
+.highlight-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
 
+.highlight-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
 
+/* ── MEDIA QUERIES ── */
+@media (max-width: 768px) {
+  .highlights-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .highlight-card { padding: 1.5rem; }
+  .highlight-title { font-size: 1rem; }
+}
 
 
 
@@ -751,9 +792,6 @@ footer {
   letter-spacing: 0.08em;
 }
 
-
-
-/* ── MEDIA QUERIES ── */
 @media (max-width: 768px) {
   .hero { padding: 3rem 1.25rem 2rem; }
   .why-grid { grid-template-columns: 1fr; margin: 1.5rem 0; }
